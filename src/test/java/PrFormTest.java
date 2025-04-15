@@ -34,7 +34,7 @@ public class PrFormTest {
 
         $("label[for=hobbies-checkbox-1]").click();
 
-        $("#uploadPicture").uploadFromClasspath("pic.jpg");
+        $("#uploadPicture").uploadFromClasspath("pic.png");
 
         $("#currentAddress").setValue("Griboedova St. 1, 2");
 
@@ -50,7 +50,7 @@ public class PrFormTest {
         $(".table-responsive").$(byText("Date of Birth")).parent().shouldHave(text("25 May, 1993"));
         $(".table-responsive").$(byText("Subjects")).parent().shouldHave(text("English"));
         $(".table-responsive").$(byText("Hobbies")).parent().shouldHave(text("Sport"));
-        $(".table-responsive").$(byText("Picture")).parent().shouldHave(text("pic.jpg"));
+        $(".table-responsive").$(byText("Picture")).parent().shouldHave(text("pic.png"));
         $(".table-responsive").$(byText("Address")).parent().shouldHave(text("Griboedova St. 1, 2"));
         $(".table-responsive").$(byText("State and City")).parent().shouldHave(text("NCR Delhi"));
     }
